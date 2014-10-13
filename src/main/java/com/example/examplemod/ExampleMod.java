@@ -3,7 +3,10 @@ package main.java.com.example.examplemod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -18,6 +21,18 @@ public class ExampleMod {
 	public static final String VERSION = "1.0";
 
 	public static Block blockTeset;
+
+	public static CreativeTabs tabExample = new CreativeTabs("tabExample") {
+		public Item getTabIconItem() {
+			return Items.bed;
+		}
+	};
+
+	public static CreativeTabs tabExample2 = new CreativeTabs("tabExample2") {
+		public Item getTabIconItem() {
+			return Item.getItemFromBlock(Blocks.carpet);
+		}
+	};
 
 	@EventHandler
 	public void preLoad(FMLPreInitializationEvent event) {

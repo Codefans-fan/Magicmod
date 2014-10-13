@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class NewBlockTest extends Block {
+	@SuppressWarnings("unused")
 	private static final String __OBFID = "CL_00000333";
 
 	protected NewBlockTest(Material p_i45394_1_) {
