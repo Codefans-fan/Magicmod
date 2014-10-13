@@ -11,7 +11,6 @@ public class NewBlockTest extends Block {
 
 	protected NewBlockTest(Material p_i45394_1_) {
 		super(p_i45394_1_);
-		this.setBlockName("Test_Block");
 		this.setBlockTextureName(ExampleMod.MODID + ":test");
 	}
 
