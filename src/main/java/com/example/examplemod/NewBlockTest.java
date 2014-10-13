@@ -13,7 +13,7 @@ public class NewBlockTest extends Block {
 		super(p_i45394_1_);
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setBlockName("Test_Block");
-
+		this.setBlockTextureName(ExampleMod.MODID + ":test");
 	}
 
 	/**
