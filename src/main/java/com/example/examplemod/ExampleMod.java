@@ -34,10 +34,18 @@ public class ExampleMod {
 		}
 	};
 
+	// add item example
+	public static Item tutorialItem;
+
 	@EventHandler
 	public void preLoad(FMLPreInitializationEvent event) {
 		blockTeset = new NewBlockTest(new Material(MapColor.diamondColor));
+		blockTeset.setCreativeTab(tabExample2);
+		tutorialItem = new Item().setCreativeTab(tabExample)
+				.setUnlocalizedName("tutorialItem");
 
+		tutorialItem.setTextureName(MODID + ":test");
+		GameRegistry.registerItem(tutorialItem, "tutorialItem");
 	}
 
 	@EventHandler
